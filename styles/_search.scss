@@ -1,0 +1,35 @@
+.Search {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 48px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+
+    &:hover {
+        border-bottom: 1px solid rgb(66, 66, 66);
+    }
+
+    .Search-icon {
+        width: 24px;
+        height: 24px;
+        opacity: .5;
+    }
+
+    input {
+        width: 301px;
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .Search-clear {
+        position: absolute;
+        top: 25px;
+        right: 11px;
+        width: 12px;
+        height: 12px;
+        opacity: .5;
+    }
+}

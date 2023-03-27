@@ -1,0 +1,150 @@
+.Menu {
+	position: absolute;
+	top: 102px;
+	left: 0;
+	width: 400px;
+	height: 100%;
+	border-right: 1px solid rgb(196, 196, 196);
+	z-index: 1;
+	overflow: auto;
+	background: white;
+	color: #2d3274;
+	transition: .5s;
+
+	.Menu-headerContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 44px;
+		padding: 0 16px;
+
+		h5 {
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+			opacity: .5;
+			cursor: pointer;
+		}
+	}
+
+	.Menu-contentContainer {
+		margin-top: 16px;
+		padding: 16px;
+
+		.Menu-list {
+			margin-top: 48px;
+			list-style-type: none;
+			color: rgb(45, 50, 116);
+			cursor: pointer;
+
+			.Menu-item {
+				display: flex;
+				justify-content: space-between;
+				height: 24px;
+				margin: 8px 0;
+				transition: .5s;
+
+				svg {
+					width: 16px;
+					height: 16px;
+					margin: 5px 0 0 4px;
+					fill: #2d3274;
+					opacity: .5;
+					transition: .5s;
+				}
+
+				&:hover {
+					color: #ffaf42;
+				}
+	
+				&:hover svg {
+					fill: #ffaf42;
+				}
+			}
+
+			.Menu-newItem1 {
+				height: 132px;
+				overflow: hidden;
+				transition: .5s;
+
+				.Menu-optionsType1 {
+					margin: 8px 5px;
+					list-style-type: none;
+
+					li {
+						&:hover {
+							color: #ffaf42;
+						}
+					}
+				}
+			}
+
+			.Menu-simpleItem {
+				height: 24px;
+				margin: 16px 0;
+			}
+
+			.Menu-newItem2 {
+				overflow: hidden;
+				transition: .5s;
+
+				ul {
+					
+					.Menu-optionsType2, .Menu-optionsType3 {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						margin: 16px 5px 16px 16px;
+						list-style-type: none;
+	
+						p {
+							max-width: 167px;
+
+							&:hover {
+								color: #ffaf42;
+							}
+						}
+
+						svg {
+							width: 16px;
+							height: 16px;
+							margin: 5px 0 0 4px;
+							fill: #2d3274;
+							opacity: .5;
+							transition: .5s;
+
+							&:hover {
+								fill: #ffaf42;
+							}
+						}
+
+						.Menu-sublist {
+							display: block;
+							width: 355px;
+							
+							.Menu-suboptions {
+								margin: 8px;
+								list-style-type: none;
+
+								&:hover {
+									color: #ffaf42;
+								}
+							}
+						}
+					}
+
+					.Menu-optionsType3 {
+
+						&:hover {
+							color: #ffaf42;
+						}
+					}
+				}
+			}
+		}
+	}
+}

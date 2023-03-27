@@ -1,0 +1,59 @@
+@import "header";
+@import "menu";
+@import "search";
+@import "footer";
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../source/font/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../source/font/Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("../source/font/Lato-Black.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url("../source/font/Lato-Light.woff2") format("woff2");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato";
+}
+
+main {
+	margin-top: 200px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.listArrowRotate {
+	transform: rotate(180deg);
+}
+
+.menuHidden {
+	left: -400px;
+}

@@ -1,0 +1,96 @@
+.Fixes {
+	max-width: 1170px;
+	margin: 76px auto 0;
+	padding: 0 24px;
+	color: #2d3274;
+
+	.headerContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 70px;
+	
+		h1 {
+			line-height: 70px;
+			font-size: 70px;
+			font-weight: 700;
+		}
+	}
+
+	.list {
+		margin-top: 40px;
+		font-weight: 800;
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			height: 40px;
+			color: #2d3274;
+
+
+			&:hover {
+				color: #ffaf42;
+			}
+
+			&::before {
+				content: url("../source/Service.svg");
+				padding-right: 10px;
+			}
+		}
+	}
+	.navigation {
+		display: flex;
+		justify-content: center;
+		margin: 64px auto;
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+		}
+
+		.navigateLeft, .navigateRight, .navigate {
+			width: 34px;
+			height: 37px;
+			line-height: 30px;
+			text-align: center;
+			border: 1px solid rgb(196, 196, 196);
+			border-top-left-radius: 15px;
+			border-bottom-left-radius: 15px;
+			color: #2d3274;
+			transition: .3s;
+
+			&:hover {
+				color: #ffaf42;
+				background: rgb(196, 196, 196);
+			}
+		}
+
+		.navigateRight  {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+
+		.navigate {
+			border-radius: 0;
+		}
+
+		.currentPage {
+			background: #2d3274 !important;
+			color: white !important;
+			cursor: default;
+		}
+
+		.navigateDisabled {
+			color: #2d3274 !important;
+			background: white !important;
+			cursor: default !important;
+		}
+	}
+}
